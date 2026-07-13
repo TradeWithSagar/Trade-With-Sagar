@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade With Sagar | Join Community</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <img src="logo.png" class="logo">
+
+        <h1>TRADE WITH SAGAR</h1>
+
+        <p class="sub">
+            Join Our Free Trading Community
+        </p>
+
+        <form id="registerForm">
+
+            <input type="text" id="name" placeholder="Full Name"
+pattern="[A-Za-z ]{3,50}"
+title="Only letters and spaces are allowed"
+required>
+
+            <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required>
+
+            <input type="tel" id="phone"
+placeholder="Mobile Number"
+pattern="[6-9]{1}[0-9]{9}"
+maxlength="10"
+title="Enter a valid 10-digit Indian mobile number"
+required>
+
+            <label class="check">
+            <!-- Terms & Conditions Popup -->
+
+
+                                            <label>
+  <input type="checkbox" id="agree">
+  I agree to <a href="#" onclick="showTerms()">Terms & Conditions</a>
+</label>
+
+<div id="termsBox" style="display:none; margin-top:10px;">
+  <p>
+    <b>1.</b> This website is created for educational purposes only.<br><br>
+
+<b>2.</b> TRADE WITH SAGAR is not a SEBI-registered investment advisor.<br><br>
+
+<b>3.</b> Stock market trading involves financial risk.<br><br>
+
+<b>4.</b> You are fully responsible for your own profit or loss.<br><br>
+
+<b>5.</b> Always do your own research before investing.<br><br>
+
+<b>6.</b> By registering, you agree to join our WhatsApp community.<br><br>
+
+<b>7.</b> Your Name, Email and Mobile Number are used only for registration purposes.
+  </p>
+</div>
+
+<br>
+
+<button id="submitBtn" disabled class="small-btn">Submit</button>
+
+
+<style>
+.small-btn{
+  padding: 6px 18px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+
+
+<script>
+function showTerms(){
+  document.getElementById("termsBox").style.display="block";
+}
+
+document.getElementById("agree").addEventListener("change",function(){
+  document.getElementById("submitBtn").disabled = !this.checked;
+});
+                </script>
+
+</script>
+
+        </form>
+
+        <div class="buttons">
+
+            <a
+            href="https://www.youtube.com/channel/UC9mDI1JI5qJYjhx6UIeFSSw"
+            target="_blank">
+
+            📺 YouTube
+
+            </a>
+
+            <a
+            href="https://chat.whatsapp.com/H60sRiX0EEAIKj4s3e7XM1"
+            target="_blank">
+
+            💬 WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
