@@ -51,6 +51,6 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
     alert("Registration Successful!");
 
-    window.location.href="https://chat.whatsapp.com/H60sRiX0EEAIKj4s3e7XM1";
+    window.location.href="https://chat.whatsapp.com/ExbQZhlNualCx391fBC0nN";
 
 });
